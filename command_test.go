@@ -127,7 +127,7 @@ func TestMoveLeft(t *testing.T) {
 	state.Skip = true
 	err = MoveLeft(state)
 	assert.NoError(t, err)
-	assert.Equal(t, 0, int(state.DataPointer))
+	assert.Equal(t, 3, int(state.DataPointer))
 }
 
 func TestLoopStart(t *testing.T) {
