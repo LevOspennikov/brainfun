@@ -11,7 +11,7 @@ brainfuck := brainfun.NewInterpreter() // creates new interpreter with default s
 
 
 ```go
-brainfuck.Execute("+++") // executes program, should be ended, for example no open loops
+err := brainfuck.Execute(strings.NewReader("+++")) // executes program, should be ended, for example no open loops
 ```
 
 You can replace functions of read and write with new, which contains your input 
